@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/styles/css/styles.css">
+        <title>Michael Andreas Prasetio</title>
+    </head>
+    <body>
+        <header>
+            <button type="button" onclick="scrollToSection('#sect1')">Home</button>
+            <button type="button" onclick="scrollToSection('#sect2')">About Me</button>
+            <button type="button" onclick="scrollToSection('#sect3')">Skills</button>
+            <button type="button" onclick="scrollToSection('#sect4')">Projects</button>
+            <button type="button" onclick="scrollToSection('#sect5')">Contact</button>
+        </header>
+        <main>
+            <div class="home" id="sect1">
+                <div class="home-top">
+                  <img src="assets/img/michael-square.jpg" alt="Foto Profil">
+              </div>
+                <div class="home-left">
+                    <p class="top-subtitle">Hello there. My name is</p>
+                    <p class="title">Michael Andreas P</p>
+                    <p class="bottom-subtitle">Android Developer | Front-end Developer</p>
+                    <button type="button" onclick="scrollToSection('#sect2')">Get Started</button>
+                </div>
+                <div class="home-right">
+                    <img src="assets/img/michael-square.jpg" alt="Foto Profil">
+                </div>
+            </div>
+
+            <div class="about-me" id="sect2">
+              <h1>About Me</h1>
+              <div class="about-me-items">
+                  <img src="assets/img/michael-square.jpg" alt="">
+                  <div class="card">
+                      <p>
+                        Greetings! I'm Michael Andreas Prasetio, an ambitious 6th-semester informatics student at UBAYA. 
+                        I am also currently an active student in the Bangkit Program, where I am pursuing the Mobile Development learning path. 
+                        This program has provided me with valuable experiences collaborating in my team, hone my ability to work effectively in a group. 
+                        During my time in college, I have taken on several roles in committee, mostly as member. 
+                        These experiences have allowed me to develop excellent communication, organizational, and teamwork skills, enhancing my ability to contribute effectively to collaborative projects. 
+                        While I may not have formal work experience yet, I am eager to gain practical exposure and apply my skills in a professional environment. 
+                        I am actively seeking internships to further develop my abilities and contribute to meaningful projects. 
+                        As a dedicated learner and a team player, I am always seeking opportunities for personal growth and making a positive impact. 
+                        If you have any internship offers or interested in collaborating, I would be thrilled to connect and explore potential synergies.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="skills" id="sect3">
+            <h1>My Skills</h1>
+            <div class="skills-items">
+              <div>
+                <img src="assets/img/logo/html.png" alt="HTML Logo"><br><br>
+                <p>HTML</p>
+              </div>
+              <div>
+                <img src="assets/img/logo/css.png" alt="CSS Logo"><br><br>
+                <p>CSS</p>
+              </div>
+              <div>
+                <img src="assets/img/logo/php.png" alt="PHP Logo"><br><br>
+                <p>PHP</p>
+              </div>
+              <div>
+                <img src="assets/img/logo/js.png" alt="JS Logo"><br><br>
+                <p>Javascript</p>
+              </div>
+              <div>
+                <img src="assets/img/logo/kotlin.png" alt="Kotlin Logo"><br><br>
+                <p>Kotlin</p>
+              </div>
+              <div>
+                <img src="assets/img/logo/python.png" alt="Python Logo"><br><br>
+                <p>Python</p>
+              </div>
+              <div>
+                <img src="assets/img/logo/laravel.jpeg" alt="Laravel Logo"><br><br>
+                <p>Laravel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-projects" id="sect4">
+              <h1>My Projects</h1>
+              <div class="my-projects-items">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="assets/img/img.jpg" alt="Card Front Image">
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="card-content">
+                          <h2>Github User App</h2>
+                          <p><b>Skills learned:</b> Kotlin, Fragment, Retrofit, LiveData, SharedPreferences</p>
+                          <button class="btn" onclick="openURL('https://github.com/Michael-Tio/MyGithubUserApp')">Github Repository</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="assets/img/img.jpg" alt="Card Front Image">
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="card-content">
+                          <h2>Dicoding Story App</h2>
+                          <p><b>Skills learned:</b> Kotlin, Retrofit, LiveData, Paging3, Geolocation, Animation, Custom View</p>
+                          <button class="btn" onclick="openURL('https://github.com/Michael-Tio/Story_Dicoding_App')">Github Repository</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="assets/img/img.jpg" alt="Card Front Image">
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="card-content">
+                          <h2>Actor List App</h2>
+                          <p><b>Skills learned:</b> Kotlin, Jetpack Compose, Navigation, Lazy Layout</p>
+                          <button class="btn" onclick="openURL('https://github.com/Michael-Tio/Actor_List_App')">Github Repository</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="contact-me" id="sect5">
+            <h1>Contact Me</h1>
+            <div class="contact-me-items">
+              <img src="assets/img/logo/linkedin.png" alt="Linkedin Logo" onclick="openURL('https://www.linkedin.com/in/michael-andreas-prasetio/')">
+              <img src="assets/img/logo/whatsapp.png" alt="Whatsapp Logo" onclick="openURL('https://wa.me/6285257279898/')">
+            </div>
+            <h2>Or Email Me Instead:</h2>
+            <div class="email-me">
+              <form action="assets/php/sendEmail.php" method="post">
+                <input type="email" name="sender" class="sender" placeholder="Your Email" required>
+                <input type="text" name="subject" class="subject" placeholder="Subject" required>
+                <textarea name="message" class="message" rows="10" placeholder="Your Message Here" required></textarea>
+                <input type="submit" name="send" class="send" value="Send Email">
+              </form>
+            </div>
+          </div>
+        </main>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
