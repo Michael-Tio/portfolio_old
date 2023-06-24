@@ -9,11 +9,14 @@
     </head>
     <body>
         <header>
-            <button type="button" onclick="scrollToSection('#sect1')">Home</button>
-            <button type="button" onclick="scrollToSection('#sect2')">About Me</button>
-            <button type="button" onclick="scrollToSection('#sect3')">Skills</button>
-            <button type="button" onclick="scrollToSection('#sect4')">Projects</button>
-            <button type="button" onclick="scrollToSection('#sect5')">Contact</button>
+            <button class="hamburger-button" onclick="toggleMenu()">&#9776;</button>
+            <nav class="main-menu">
+              <button type="button" onclick="scrollToSection('#sect1')">Home</button>
+              <button type="button" onclick="scrollToSection('#sect2')">About Me</button>
+              <button type="button" onclick="scrollToSection('#sect3')">Skills</button>
+              <button type="button" onclick="scrollToSection('#sect4')">Projects</button>
+              <button type="button" onclick="scrollToSection('#sect5')">Certificates</button>
+            </nav>
         </header>
         <main>
             <div class="home" id="sect1">
@@ -53,34 +56,36 @@
 
           <div class="skills" id="sect3">
             <h1>My Skills</h1>
-            <div class="skills-items">
-              <div>
-                <img src="assets/img/logo/html.png" alt="HTML Logo"><br><br>
-                <p>HTML</p>
-              </div>
-              <div>
-                <img src="assets/img/logo/css.png" alt="CSS Logo"><br><br>
-                <p>CSS</p>
-              </div>
-              <div>
-                <img src="assets/img/logo/php.png" alt="PHP Logo"><br><br>
-                <p>PHP</p>
-              </div>
-              <div>
-                <img src="assets/img/logo/js.png" alt="JS Logo"><br><br>
-                <p>Javascript</p>
-              </div>
-              <div>
-                <img src="assets/img/logo/kotlin.png" alt="Kotlin Logo"><br><br>
-                <p>Kotlin</p>
-              </div>
-              <div>
-                <img src="assets/img/logo/python.png" alt="Python Logo"><br><br>
-                <p>Python</p>
-              </div>
-              <div>
-                <img src="assets/img/logo/laravel.jpeg" alt="Laravel Logo"><br><br>
-                <p>Laravel</p>
+            <div class="skills-container">
+              <div class="skills-items">
+                <div>
+                  <img src="assets/img/logo/html.png" alt="HTML Logo"><br><br>
+                  <p>HTML</p>
+                </div>
+                <div>
+                  <img src="assets/img/logo/css.png" alt="CSS Logo"><br><br>
+                  <p>CSS</p>
+                </div>
+                <div>
+                  <img src="assets/img/logo/php.png" alt="PHP Logo"><br><br>
+                  <p>PHP</p>
+                </div>
+                <div>
+                  <img src="assets/img/logo/js.png" alt="JS Logo"><br><br>
+                  <p>Javascript</p>
+                </div>
+                <div>
+                  <img src="assets/img/logo/kotlin.png" alt="Kotlin Logo"><br><br>
+                  <p>Kotlin</p>
+                </div>
+                <div>
+                  <img src="assets/img/logo/python.png" alt="Python Logo"><br><br>
+                  <p>Python</p>
+                </div>
+                <div>
+                  <img src="assets/img/logo/laravel.jpeg" alt="Laravel Logo"><br><br>
+                  <p>Laravel</p>
+                </div>
               </div>
             </div>
           </div>
@@ -131,25 +136,22 @@
                     </div>
                 </div>
               </div>
-          </div>
+            </div>
 
-          <div class="contact-me" id="sect5">
+            <div class="my-certificates">
+
+            </div>
+        </main>
+        <footer>
+          <div class="contact-me">
             <h1>Contact Me</h1>
             <div class="contact-me-items">
               <img src="assets/img/logo/linkedin.png" alt="Linkedin Logo" onclick="openURL('https://www.linkedin.com/in/michael-andreas-prasetio/')">
-              <img src="assets/img/logo/whatsapp.png" alt="Whatsapp Logo" onclick="openURL('https://wa.me/6285257279898/')">
-            </div>
-            <h2>Or Email Me Instead:</h2>
-            <div class="email-me">
-              <form action="assets/php/sendEmail.php" method="post">
-                <input type="email" name="sender" class="sender" placeholder="Your Email" required>
-                <input type="text" name="subject" class="subject" placeholder="Subject" required>
-                <textarea name="message" class="message" rows="10" placeholder="Your Message Here" required></textarea>
-                <input type="submit" name="send" class="send" value="Send Email">
-              </form>
+              <img src="assets/img/logo/whatsapp.png" alt="Whatsapp Logo" onclick="openURL('https://api.whatsapp.com/send?phone=6285257279898&text=Halo%20Michael%2C%20Saya%20menemukan%20anda%20dari%20website%20anda.')">
+              <img src="assets/img/logo/gmail.jpg" alt="Gmail Logo" onclick="openUrl('https://mail.google.com/mail/?view=cm&source=mailto&to=mtio161@gmail.com')">
             </div>
           </div>
-        </main>
+        </footer>
 
         <script src="assets/js/script.js"></script>
     </body>

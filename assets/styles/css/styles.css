@@ -9,20 +9,32 @@ body{
 main{
     width: 100%;
 }
+header{
+    
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: fixed;
+    z-index: 100;
+}
 
 @media screen and (min-width: 768px) {
     header{
-        position: fixed;
-        z-index: 100;
-        width: 100%;
-        background-color: rgba(25, 25, 25, 1);
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        height: 15vh;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    header button{
+    .hamburger-button {
+        display: none;
+    }
+    header .main-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header .main-menu button{
         height: 50px;
         width: 150px;
         margin-left: 20px;
@@ -36,7 +48,7 @@ main{
         text-decoration: none;
         color: #DDDDDD;
     }
-    header button:hover{
+    header .main-menu button:hover{
         cursor: pointer;
         background-color: rgba(113, 113, 113, 0.3);
     }
@@ -115,15 +127,16 @@ main{
         color:#DDDDDD;
         margin-left: 20px;
         margin-right: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     .skills h1{
         font-size: 3em;
+        text-align: center;
     }
-    .skills .skills-items{
+    .skills .skills-container{
+        display: flex;
+        justify-content: center;
+    }
+    .skills .skills-container .skills-items{
         margin-top: 50px;
         width: 60vw;
         padding: 50px;
@@ -133,10 +146,10 @@ main{
         display: grid;
         justify-content: center;
         grid-template-columns: auto auto auto auto;
-        gap: 80px;
+        gap: 7vh;
     }
-    .skills .skills-items div{
-        width: 100px;
+    .skills .skills-container .skills-items div{
+        width: 8vw;
         height: 150px;
         padding: 10px;
         background-color:#cecece;
@@ -145,7 +158,7 @@ main{
         font-weight: bold;
         border-radius: 10%;
     }
-    .skills .skills-items div img{
+    .skills .skills-container .skills-items div img{
         width: 100%;
         height: 60%;
         object-fit: contain;
@@ -153,6 +166,7 @@ main{
 
     .my-projects{
         padding-top: 20vh;
+        height: 70vh;
         color:#DDDDDD;
         margin-left: 20px;
         margin-right: 20px;
@@ -231,96 +245,71 @@ main{
         color: #f1f1f1;
     }
 
-    .contact-me{
-        padding-top: 20vh;
+    footer{
+        height: 20vh;
+        background-color: rgba(25, 25, 25, 1);
+        color:#DDDDDD;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .contact-me{
         color:#DDDDDD;
         margin-left: 20px;
         margin-right: 20px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
-    .contact-me h1{
-        font-size: 3em;
+    footer .contact-me h1{
+        font-size: 2em;
     }
-    .contact-me .contact-me-items{
-        margin-top: 50px;
+    footer .contact-me .contact-me-items{
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         column-gap: 20px;
     }
-    .contact-me .contact-me-items:hover{
+    footer .contact-me .contact-me-items img:hover{
         cursor: pointer;
     }
-    .contact-me .contact-me-items img{
-        width: 50px;
-    }
-    .contact-me h2{
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-    .contact-me .email-me form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
-    }
-    .contact-me .email-me form .sender, .subject{
-        padding: 10px 10px;
-        width: 30vw;
-        font-size: 16px;
-    }
-    .contact-me .email-me form .message{
-        padding: 10px 10px;
-        width: 30vw;
-        font-size: 16px;
-        resize: none;
-    }
-    .contact-me .email-me form .send{
-        width: 200px;
-        height: 40px;
-
-        font-size: 16px;
-
-        margin-bottom: 30px;
+    footer .contact-me .contact-me-items img{
+        width: 30px;
     }
 }
 
 
 
 @media screen and (max-width: 768px) {
-    header{
-        width: 100%;
-        height: 10%;
-        position: fixed;
-        z-index: 100;
-        background-color: rgba(25, 25, 25, 1);
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    header .hamburger-button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 30px;
+    }
+    header .main-menu {
+        display: none; /* Menyembunyikan menu pada awalnya */
         
-        display: flex;
+        background-color: #252525;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    header button{
+    header .main-menu button{
         height: 50px;
-        width: 100px;
+        width: 100%;
         margin-left: 20px;
         margin-right: 20px;
         
         background-color: transparent;
         border: none;
-        border-radius: 10px;
+        border-bottom: 1px solid gray;
+        border-radius: 0;
     
-        font-size: 15px;
+        font-size: large;
         text-decoration: none;
         color: #DDDDDD;
     }
-    header button:hover{
-        cursor: pointer;
-        background-color: rgba(113, 113, 113, 0.3);
-    }
+
     .home{
         height: 85vh;
         padding-top: 15vh;
@@ -356,6 +345,80 @@ main{
         height: 150px;
         width: 150px;
         border-radius: 100px;
+    }
+
+    .about-me{
+        padding-top: 20vh;
+        margin-top: 10vh;
+        color:#DDDDDD;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about-me h1{
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .about-me .about-me-items{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me .about-me-items img{
+        width: 100px;
+        border-radius: 50px;
+    }
+    .about-me .about-me-items .card{
+        background-color: #333;
+        width: 60vw;
+        padding: 50px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        z-index: -1;
+    
+        text-align: center;
+    }
+
+    .skills{
+        padding-top: 20vh;
+        color:#DDDDDD;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .skills h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .skills .skills-container{
+        display: flex;
+        justify-content: center;
+    }
+    .skills .skills-container .skills-items{
+        margin-top: 50px;
+        width: 60vw;
+        padding: 50px;
+        background-color: #333;
+        border-radius: 1%;
+
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto;
+        gap: 7vh;
+    }
+    .skills .skills-container .skills-items div{
+        width: 20vw;
+        height: 150px;
+        padding: 10px;
+        background-color:#cecece;
+        color:#333;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 10%;
+    }
+    .skills .skills-container .skills-items div img{
+        width: 100%;
+        height: 60%;
+        object-fit: contain;
     }
 
     .my-projects{
@@ -440,35 +503,35 @@ main{
         color: #f1f1f1;
     }
 
-    .about-me{
-        padding-top: 20vh;
-        margin-top: 10vh;
+    footer{
+        margin-top: 30vh;
+        height: 20vh;
+        background-color: rgba(25, 25, 25, 1);
+        color:#DDDDDD;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .contact-me{
         color:#DDDDDD;
         margin-left: 20px;
         margin-right: 20px;
     }
-    .about-me h1{
-        text-align: center;
-        font-size: 2.5em;
+    footer .contact-me h1{
+        font-size: 1.5em;
     }
-    .about-me .about-me-items{
-        margin-top: 50px;
+    footer .contact-me .contact-me-items{
+        margin-top: 10px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 20px;
     }
-    .about-me .about-me-items img{
-        width: 100px;
-        border-radius: 50px;
+    footer .contact-me .contact-me-items img:hover{
+        cursor: pointer;
     }
-    .about-me .about-me-items .card{
-        background-color: #333;
-        width: 60vw;
-        padding: 50px;
-        margin-top: -30px;
-        margin-bottom: 30px;
-        z-index: -1;
-    
-        text-align: center;
+    footer .contact-me .contact-me-items img{
+        width: 4vh;
     }
 }
