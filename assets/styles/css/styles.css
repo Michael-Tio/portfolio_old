@@ -407,12 +407,13 @@ header{
     }
     .skills .skills-container .skills-items div{
         width: 20vw;
-        height: 150px;
+        height: 110px;
         padding: 10px;
         background-color:#cecece;
         color:#333;
         text-align: center;
         font-weight: bold;
+        font-size: 12px;
         border-radius: 10%;
     }
     .skills .skills-container .skills-items div img{
