@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/assets/styles/css/styles.css">
         <link rel="stylesheet" href="assets/styles/css/big.css">
         <link rel="stylesheet" href="assets/styles/css/small.css">
+        <link rel="stylesheet" href="assets/styles/css/scroll.css">
         <title>Michael Andreas Prasetio</title>
     </head>
     <body>
@@ -22,16 +23,14 @@
         </header>
         <main>
             <div class="home" id="sect1">
-                <div class="home-top">
-                  <img src="assets/img/michael-square.jpg" alt="Foto Profil">
-              </div>
-                <div class="home-left">
+                <div class="home-left hiddenToLeft">
+                    <img class="home-top" src="assets/img/michael-square.jpg" alt="Foto Profil">
                     <p class="top-subtitle">Hello there. My name is</p>
                     <p class="title">Michael Andreas P</p>
                     <p class="bottom-subtitle">Android Developer | Front-end Developer</p>
                     <button type="button" onclick="scrollToSection('#sect2')">Get Started</button>
                 </div>
-                <div class="home-right">
+                <div class="home-right hiddenToRight">
                     <img src="assets/img/michael-square.jpg" alt="Foto Profil">
                 </div>
             </div>
@@ -60,31 +59,31 @@
             <h1>My Skills</h1>
             <div class="skills-container">
               <div class="skills-items">
-                <div>
+                <div class="hiddenGoUp">
                   <img src="assets/img/logo/html.png" alt="HTML Logo"><br><br>
                   <p>HTML</p>
                 </div>
-                <div>
+                <div class="hiddenGoUp">
                   <img src="assets/img/logo/css.png" alt="CSS Logo"><br><br>
                   <p>CSS</p>
                 </div>
-                <div>
+                <div class="hiddenGoUp">
                   <img src="assets/img/logo/php.png" alt="PHP Logo"><br><br>
                   <p>PHP</p>
                 </div>
-                <div>
+                <div class="hiddenGoUp">
                   <img src="assets/img/logo/js.png" alt="JS Logo"><br><br>
                   <p>Javascript</p>
                 </div>
-                <div>
+                <div class="hiddenGoUp">
                   <img src="assets/img/logo/kotlin.png" alt="Kotlin Logo"><br><br>
                   <p>Kotlin</p>
                 </div>
-                <div>
+                <div class="hiddenGoUp">
                   <img src="assets/img/logo/python.png" alt="Python Logo"><br><br>
                   <p>Python</p>
                 </div>
-                <div>
+                <div class="hiddenGoUp">
                   <img src="assets/img/logo/laravel.jpeg" alt="Laravel Logo"><br><br>
                   <p>Laravel</p>
                 </div>
@@ -95,7 +94,7 @@
           <div class="my-projects" id="sect4">
               <h1>My Projects</h1>
               <div class="my-projects-items">
-                <div class="flip-card">
+                <div class="flip-card hiddenFade">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                         <img src="assets/img/img.jpg" alt="Card Front Image">
@@ -109,7 +108,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card hiddenFade">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                         <img src="assets/img/img.jpg" alt="Card Front Image">
@@ -123,7 +122,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card hiddenFade">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                         <img src="assets/img/img.jpg" alt="Card Front Image">

@@ -1,0 +1,44 @@
+@media(prefers-reduced-motion) {
+    .hiddenFade, .hiddenGoUp, .hiddenToLeft{
+        transition: none;
+    }
+}
+.hiddenFade{
+    opacity: 0;
+    transition: all 1s;
+}
+.showFade{
+    opacity: 1;
+}
+
+.hiddenGoUp{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.showGoUp{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.hiddenToLeft{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.showFromLeft{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hiddenToRight{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.showFromRight{
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -34,11 +34,11 @@
         font-size: 3em;
     }
     .home .home-right img{
-        height: 40vh;
+        height: 35vh;
         border-radius: 300px;
         box-shadow: 5px 10px 70px 5px #000000;
     }
-    .home .home-top img{
+    .home .home-left .home-top{
         display: none;
     }
 
