@@ -1,0 +1,94 @@
+@media screen and (max-width: 768px) {
+    header .hamburger-button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 30px 30px 25px 30px;
+    }
+    header .main-menu {
+        display: none; /* Menyembunyikan menu pada awalnya */
+        
+        background-color: #252525;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header .main-menu button{
+        height: 50px;
+        width: 100%;
+        
+        border-bottom: 1px solid gray;
+        border-radius: 0;
+    }
+
+    .home{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .home .home-left .top-subtitle{
+        font-size: 1.25em;
+    }
+    .home .home-left .title{
+        font-size: 1.75em;
+        font-weight: bold;
+    }
+    .home .home-right img{
+        display: none;
+    }
+    .home .home-top img{
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+    }
+
+    .about-me{
+        margin-top: 10vh;
+    }
+    .about-me h1{
+        font-size: 2.5em;
+    }
+    .about-me .about-me-items{
+        margin-top: 50px;
+    }
+    .about-me .about-me-items .card{
+        margin-bottom: 30px;
+    }
+
+    .skills h1{
+        font-size: 2.5em;
+    }
+    .skills .skills-container .skills-items{
+        grid-template-columns: auto auto;
+    }
+    .skills .skills-container .skills-items div{
+        width: 20vw;
+        height: 110px;
+        font-size: 12px;
+    }
+
+    .my-projects h1{
+        font-size: 2.5em;
+    }
+    .my-projects .my-projects-items{
+        grid-template-rows: 200px 200px 200px;
+        gap: 100px;
+    }
+    .my-projects .my-projects-items .flip-card .flip-card-inner .flip-card-back .card-content .btn {
+        width: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    footer{
+        margin-top: 30vh;
+    }
+    footer .contact-me h1{
+        font-size: 1.5em;
+    }
+    footer .contact-me .contact-me-items img{
+        width: 4vh;
+    }
+}

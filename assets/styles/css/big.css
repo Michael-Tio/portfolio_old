@@ -1,0 +1,89 @@
+@media screen and (min-width: 768px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header .hamburger-button {
+        display: none;
+    }
+    header .main-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header .main-menu button{
+        height: 50px;
+        width: 150px;
+        
+        border-radius: 15px;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20vh;
+    }
+    .home .home-left .top-subtitle{
+        font-size: 1.5em;
+    }
+    .home .home-left .title{
+        font-size: 3em;
+    }
+    .home .home-right img{
+        height: 40vh;
+        border-radius: 300px;
+        box-shadow: 5px 10px 70px 5px #000000;
+    }
+    .home .home-top img{
+        display: none;
+    }
+
+    .about-me h1{
+        font-size: 3em;
+    }
+    .about-me .about-me-items{
+        margin-top: 70px;
+    }
+    .about-me .about-me-items .card{
+        font-size: 18px;
+    }
+
+    .skills h1{
+        font-size: 3em;
+    }
+    .skills .skills-container .skills-items{
+        grid-template-columns: auto auto auto auto;
+    }
+    .skills .skills-container .skills-items div{
+        width: 8vw;
+        height: 150px;
+    }
+    
+
+    .my-projects{
+        height: 70vh;
+        margin-bottom: 100px;
+    }
+    .my-projects h1{
+        font-size: 3em;
+    }
+    .my-projects .my-projects-items{
+        grid-template-columns: 200px 200px 200px;
+        gap: 20px;
+    }
+    .my-projects .my-projects-items .flip-card .flip-card-inner .flip-card-back .card-content .btn {
+        padding: 10px 20px;
+    }
+    
+    footer .contact-me h1{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    footer .contact-me .contact-me-items img{
+        width: 30px;
+    }
+}
